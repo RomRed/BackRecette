@@ -1,6 +1,6 @@
 package com.example.recette;
 
-import com.example.recette.entity.Role;
+import com.example.recette.model.entity.Role;
 import com.example.recette.service.AccountService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

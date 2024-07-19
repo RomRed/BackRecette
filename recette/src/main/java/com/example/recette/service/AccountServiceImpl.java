@@ -1,7 +1,7 @@
 package com.example.recette.service;
 
-import com.example.recette.entity.Role;
-import com.example.recette.entity.Utilisateur;
+import com.example.recette.model.entity.Role;
+import com.example.recette.model.entity.Utilisateur;
 import com.example.recette.repository.RoleRepository;
 import com.example.recette.repository.UtilisateurRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;

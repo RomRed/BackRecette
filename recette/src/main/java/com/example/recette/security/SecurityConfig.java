@@ -1,6 +1,6 @@
 package com.example.recette.security;
 
-import com.example.recette.entity.Utilisateur;
+import com.example.recette.model.entity.Utilisateur;
 import com.example.recette.service.AccountService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -53,7 +53,10 @@ private AccountService accountService;
         http.csrf().disable();
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
         http.headers().frameOptions().disable();
-        http.authorizeRequests().anyRequest().authenticated();
+        http.formLogin();
+        http.authorizeRequests()
+                .antMatchers("/api/**").permitAll()
+                .anyRequest().authenticated();
         http.addFilter(new JwtAuthenticationFilter(authenticationManagerBean()));
         http.addFilterBefore(new JwtAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class);
     }
