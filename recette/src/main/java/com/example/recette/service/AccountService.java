@@ -2,7 +2,6 @@ package com.example.recette.service;
 
 import com.example.recette.model.entity.Role;
 import com.example.recette.model.entity.Utilisateur;
-
 import java.util.List;
 
 public interface AccountService {

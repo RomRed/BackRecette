@@ -1,5 +1,6 @@
 package com.example.recette.security;
 
+
 import com.example.recette.model.entity.Utilisateur;
 import com.example.recette.service.AccountService;
 import org.springframework.context.annotation.Bean;

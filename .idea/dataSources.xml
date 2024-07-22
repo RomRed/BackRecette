@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+<<<<<<< HEAD
     <data-source source="LOCAL" name="gestionrecettes@localhost" uuid="75cd454d-8fc3-456e-9917-b3e77bec5b2d">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
@@ -21,6 +22,11 @@
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/recette/src/main/resources/application.properties</remarks>
+=======
+    <data-source source="LOCAL" name="recettes@localhost" uuid="d1e39bb8-6ba0-4d70-a905-e305ca5df612">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+>>>>>>> origin/main
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/recettes</jdbc-url>
       <jdbc-additional-properties>
